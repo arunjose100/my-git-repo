@@ -29,7 +29,7 @@ public class FaceBookLogInTest extends BaseClass{
 		propertiesObject.getProperty("URL"),waitTime);
 	System.out.println(userName+"<<Logged In Successfully>>");
 	System.out.println(userName+"<<Going to update post>>");
-	//faceBookLoginObject.postUpdate(propertiesObject.getProperty("Postupdate"));
+	faceBookLoginObject.postUpdate(propertiesObject.getProperty("Postupdate"));
 	System.out.println(propertiesObject.getProperty("Postupdate")+" has been updated on "+userName.split("@")[0]);
 	System.out.println(userName+"<<Post updated on Wall Successfully>>");
 	faceBookLoginObject.logOutFunction();
