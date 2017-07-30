@@ -116,6 +116,8 @@ public class WalletHubLightLogin{
 	fiveStar.click();
 	
 	WebElement textBoxArea = driver.findElement(By.xpath(propertiesObject.getProperty("textAreaByXpath")));
+	    
+	//Entering more than 200 character in text box
 	String concatenated = propertiesObject.getProperty("text1")+
 		propertiesObject.getProperty("text2")+
 		propertiesObject.getProperty("text3");
